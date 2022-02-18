@@ -1,13 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(40, 44, 52, 0.92);
+    color: #282c34;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    background-color: rgb(97, 218, 251);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    animation: appear 2s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.date {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.temp {
+    display: flex;
+    column-gap: 3px;
+}
+
+.minTemp {
+    color: blue;
+}
+
+.maxTemp {
+    color: red;
 }
