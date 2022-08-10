@@ -11,14 +11,14 @@ function getDate(date) {
     }
 
     let daysName =
-        ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    let monthsName = ["декабря", "января", "февраля", "марта", "апреля",
-        "мая", "июня", "июля", "августа", "сентября", "октября", "ноября"];
+        ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let monthsName = ["december", "january", "february", "march", "april",
+        "may", "june", "july", "august", "september", "october", "november"];
 
     let dayName = daysName[fullDate.getDay()];
     let monthName = monthsName[fullDate.getMonth()];
 
-    return `${dayName} ${day} ${monthName} ${year} года`;
+    return `${dayName} ${day} ${monthName} ${year} year`;
 }
 
 export default getDate;

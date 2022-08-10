@@ -8,7 +8,7 @@
       "humidity": 81,
       "uvIndex": 0,
       "windSpeed": 21,
-      "windDir": "северный",
+      "windDir": "north",
       "overall": "snow"
     },
     {
@@ -19,7 +19,7 @@
       "humidity": 71,
       "uvIndex": 0,
       "windSpeed": 11,
-      "windDir": "северный",
+      "windDir": "north",
       "overall": "rain"
     },
     {
@@ -30,7 +30,7 @@
       "humidity": 61,
       "uvIndex": 0,
       "windSpeed": 15,
-      "windDir": "восточный",
+      "windDir": "north",
       "overall": "rainfall"
     },
     {
@@ -41,7 +41,7 @@
       "humidity": 66,
       "uvIndex": 1,
       "windSpeed": 10,
-      "windDir": "западный",
+      "windDir": "west",
       "overall": "sun"
     },
     {
@@ -52,7 +52,7 @@
       "humidity": 60,
       "uvIndex": 2,
       "windSpeed": 6,
-      "windDir": "южный",
+      "windDir": "south",
       "overall": "sun"
     },
     {
@@ -63,7 +63,7 @@
       "humidity": 70,
       "uvIndex": 0,
       "windSpeed": 16,
-      "windDir": "западный",
+      "windDir": "west",
       "overall": "clouds"
     },
     {
@@ -74,7 +74,7 @@
       "humidity": 30,
       "uvIndex": 1,
       "windSpeed": 3,
-      "windDir": "северный",
+      "windDir": "north",
       "overall": "clouds"
     }
   ],

@@ -14,7 +14,7 @@ describe("Valid Day", () => {
         "humidity": 81,
         "uvIndex": 0,
         "windSpeed": 21,
-        "windDir": "северный",
+        "windDir": "north",
         "overall": "snow"
     };
 
@@ -31,7 +31,7 @@ describe("Valid Day", () => {
     test("should contain classname date with provided date", () => {
         expect(wrapper.find(".date").exists()).toBe(true);
         expect(wrapper.find(".date").length).toBe(1);
-        expect(wrapper.find(".date").text()).toBe("Понедельник 14 февраля 2022 года");
+        expect(wrapper.find(".date").text()).toBe("Monday 14 february 2022 year");
     });
 
     test("should contain classname overall with provided imgSrc", () => {
@@ -55,31 +55,31 @@ describe("Valid Day", () => {
     test("should contain classname pressure with provided pressure", () => {
         expect(wrapper.find(".pressure").exists()).toBe(true);
         expect(wrapper.find(".pressure").length).toBe(1);
-        expect(wrapper.find(".pressure").text()).toBe("Давление: 1011 mBar");
+        expect(wrapper.find(".pressure").text()).toBe("Pressure: 1011 mBar");
     });
 
     test("should contain classname humidity with provided humidity", () => {
         expect(wrapper.find(".humidity").exists()).toBe(true);
         expect(wrapper.find(".humidity").length).toBe(1);
-        expect(wrapper.find(".humidity").text()).toBe("Влажность воздуха: 81%");
+        expect(wrapper.find(".humidity").text()).toBe("Humidity: 81%");
     });
 
     test("should contain classname uvIndex with provided uvIndex", () => {
         expect(wrapper.find(".uvIndex").exists()).toBe(true);
         expect(wrapper.find(".uvIndex").length).toBe(1);
-        expect(wrapper.find(".uvIndex").text()).toBe("UV Индекс: 0");
+        expect(wrapper.find(".uvIndex").text()).toBe("UV Index: 0");
     });
 
     test("should contain classname windSpeed with provided windSpeed", () => {
         expect(wrapper.find(".windSpeed").exists()).toBe(true);
         expect(wrapper.find(".windSpeed").length).toBe(1);
-        expect(wrapper.find(".windSpeed").text()).toBe("Скорось ветра: 21 км\\час");
+        expect(wrapper.find(".windSpeed").text()).toBe("Wind speed: 21 km\\hour");
     });
 
     test("should contain classname windDir with provided windDir", () => {
         expect(wrapper.find(".windDir").exists()).toBe(true);
         expect(wrapper.find(".windDir").length).toBe(1);
-        expect(wrapper.find(".windDir").text()).toBe("Направление ветра: северный");
+        expect(wrapper.find(".windDir").text()).toBe("Wind direction: north");
     });
 
     test("should match snapshot", () => {
@@ -122,22 +122,22 @@ describe("Invalid Day", () => {
     });
 
     test("should contain classname pressure with N/A", () => {
-        expect(wrapper.find(".pressure").text()).toBe("Давление: N/A mBar");
+        expect(wrapper.find(".pressure").text()).toBe("Pressure: N/A mBar");
     });
 
     test("should contain classname humidity with N/A", () => {
-        expect(wrapper.find(".humidity").text()).toBe("Влажность воздуха: N/A%");
+        expect(wrapper.find(".humidity").text()).toBe("Humidity: N/A%");
     });
 
     test("should contain classname uvIndex with N/A", () => {
-        expect(wrapper.find(".uvIndex").text()).toBe("UV Индекс: N/A");
+        expect(wrapper.find(".uvIndex").text()).toBe("UV Index: N/A");
     });
 
     test("should contain classname windSpeed with N/A", () => {
-        expect(wrapper.find(".windSpeed").text()).toBe("Скорось ветра: N/A км\\час");
+        expect(wrapper.find(".windSpeed").text()).toBe("Wind speed: N/A km\\hour");
     });
 
     test("should contain classname windDir with N/A", () => {
-        expect(wrapper.find(".windDir").text()).toBe("Направление ветра: N/A");
+        expect(wrapper.find(".windDir").text()).toBe("Wind direction: N/A");
     });
 });

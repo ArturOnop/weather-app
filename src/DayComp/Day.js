@@ -26,14 +26,14 @@ function Day(weather) {
             <div className="date">{date}</div>
             <img className="overall" src={imgSrc} alt="weather-icon"/>
             <div className="temp">
-                От <div className="minTemp">{minTemp}</div> C°
-                До <div className="maxTemp">{maxTemp}</div> C°
+                From <div className="minTemp">{minTemp}</div> C°
+                To <div className="maxTemp">{maxTemp}</div> C°
             </div>
-            <div className="pressure">Давление: {pressure} mBar</div>
-            <div className="humidity">Влажность воздуха: {humidity}%</div>
-            <div className="uvIndex">UV Индекс: {uvIndex}</div>
-            <div className="windSpeed">Скорось ветра: {windSpeed} км\час</div>
-            <div className="windDir">Направление ветра: {windDir}</div>
+            <div className="pressure">Pressure: {pressure} mBar</div>
+            <div className="humidity">Humidity: {humidity}%</div>
+            <div className="uvIndex">UV Index: {uvIndex}</div>
+            <div className="windSpeed">Wind speed: {windSpeed} km\hour</div>
+            <div className="windDir">Wind direction: {windDir}</div>
         </div>
     );
 }
